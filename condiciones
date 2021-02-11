@@ -1,0 +1,82 @@
+function switchStatement(a) {
+    switch (typeof a){
+        case 'number':
+            console.log("number");
+            break;
+            default:
+            console.log('kkk');
+    }
+    
+    //Write your switch statement within this function
+    
+}
+
+switchStatement(5)
+
+______________________________________
+
+function adminControls(user){
+  if(user){
+    if(user.admin){
+      console.log('showing admin controls...');
+    }else{
+      console.log('syou need to be an admin...');
+    }
+  }else{
+    console.log('you need to be logged in');
+  }
+}
+
+let user0ne ={
+  name:'Kristine',
+  admin:true
+}
+
+  
+let user0two ={
+  name:'lise',
+  admin:false
+}
+
+
+let userThree = null
+
+adminControls(userThree);
+______________________________________
+function adminControls(user){
+let response = user ? (user.admin? "showing admin controls..." : "you need to be an admin"): "you need to be loggedin";
+  console.log(response);
+}
+let user0ne ={
+  name:'Kristine',
+  admin:true
+}
+
+
+  
+let userTwo ={
+  name:'lise',
+  admin:false
+}
+
+
+let userThree = null
+
+adminControls(userThree);
+______________________________________
+function hiThere(){
+console.log('hi there');
+}
+undefined
+function hiThereTwo(){
+return 'hi there again';
+}
+undefined
+var storedText = hiThere();
+ hi there
+undefined
+ var storedTexttwo = hiThereTwo();
+undefined
+storedTexttwo;
+"hi there again";
+______________________________________

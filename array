@@ -1,0 +1,66 @@
+var mixedArray = ['Hi', 1, ['a', 'b', 'c'], { name: 'Kristine' }, function greeting() { console.log('hey there');}]
+mixedArray[3];
+ // Object {name: "Kristine"}
+
+mixedArray[3].name; 
+// "Kristine"
+mixedArray[4]; 
+// function greeting( ) { console.log('hey there');}
+
+mixedArray[4](); // hey there
+______________________________________
+var arr = [ ' Altuve ' , ' Bregman ' , ' Correa ' , ' Springer ' ];
+
+arr.pop ();
+ // "Springer"
+
+arr; 
+// ['Altuve', 'Bregman', 'Correa']
+
+arr.push ( ' Bagwell ' ); 
+// 4
+
+arr; 
+// ['Altuve', 'Bregman', 'Correa', 'Bagwell']
+
+arr.shift (); 
+// ['Bregman', 'Correa', 'Bagwell']
+
+arr.unshift ( ' Kyle ' ); 
+// 4
+
+arr; 
+// ['Kyle', 'Bregman', 'Correa', 'Bagwell']
+______________________________________
+var arr = ['Altuve', 'Bregman', 'Correa', 'Springer'];
+
+var foundElement = arr.indexOf('Correa');
+foundElement;
+ // 2
+arr.splice(foundElement, 1); 
+// ["Correa"]
+arr; 
+// ["Altuve", "Bregman", "Springer"]
+arr.splice(1, 2);
+ // ["Bregman", "Springer"]
+arr;
+ // ["Altuve"]
+ ______________________________________
+ var players = [
+  'Altuve',
+  'Bregman',
+  'Correa',
+  'Springer'
+];
+
+for (player in players) {
+  console.log(players[player]);
+}
+
+for (var i = 0; i < players.length; i++) {
+  console.log(players[i]);
+}
+
+players.forEach(function(element) {
+  console.log(element);
+});

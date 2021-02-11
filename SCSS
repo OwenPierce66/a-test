@@ -1,0 +1,58 @@
+$heading-color:red;
+
+
+h1{
+  color: $heading-color;
+}
+______________________________________________
+<div class='container'>
+  <div class='item'>
+    <div class="content">
+      <img
+           src='images/logos/decamp-fantastic-fries-logo-white.png'
+           width='200px'
+           height:'120px'
+           alt='logo'
+           >
+      <div class='metadata'>
+        <h1 class='title'>my amazing title</h1>
+        <h3 class='title'>and a subtitle</h3>
+    </div>
+  </div>
+    <div class='btn-group'>
+      <div class='button'>
+        <a href="#">+</a>
+      </div>
+      <div class='button'>
+        <a href="#">X</a>
+      </div>
+    </div>
+</div>
+  </div>
+  _________________________________________________
+.container{
+  display:flex
+    .item{
+      flex:1;
+      fisplay:flex;
+      justify-container: space-between;
+      border:1px sold grey;
+      border-radius:5px;
+      margin-bottom: 10px;
+    .content{
+      display:flex;
+      .metadata{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      margin-left: 20px;
+      .title{
+      margin: 0px;
+      }
+   }
+}
+.btn-group{
+  display:flex;
+}
+}
+}

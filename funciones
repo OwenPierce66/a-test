@@ -1,0 +1,65 @@
+var userObj = {
+  email: 'sample@example.com',
+  fullName: 'Kristine Hudgens'
+}
+
+function dashboardGreeting() {
+  var userObj = {
+    email: 'sample2@example.com',
+    fullName: 'Jordan Hudgens'
+  }
+  console.log("Hi there, ".concat(userObj.fullName));
+}
+dashboardGreeting();
+console.log(userObj.fullName);
+______________________________________
+function fullName(firstName, lastName, language){
+  var language = language || 'english';
+  return lastName.toUpperCase()+", "+ firstName.toUpperCase()+", "+language;
+  
+}
+console.log(fullName('jordan', 'Hudgens', 'spanish'));
+______________________________________
+function battingAverage (){
+  var hits = 100;
+  var atBats = 300;
+  
+  return{
+    getCurrentAverage: function(){
+      return(hits/atBats);
+    },
+    updateHitsAndAtBats: function(hit, atBat){
+      hits+=hit;
+      atBats+=atBat;
+    }
+  }
+}
+______________________________________
+function movieTheater(){
+  var seats = 50;
+  var seatsSold = 28;
+
+  return{
+    remainingSeats: function(){
+      return (seats - seatsSold)
+    }
+  }
+}
+
+roomOne = movieTheater(remainingSeats)
+______________________________________
+var weirdSentence = document.getElementsByClassName ( "grabThis" ) [ 0 ] .innerHTML = "Wizards don't jump they float" ;
+______________________________________
+var seats = {
+  seats: 50,
+  seatsSold: 28,
+  remainingSeats: function(){
+    return (this.seats - this.seatsSold)
+    },
+  enoughSeats: function(){
+    if(this.remainingSeats() > 0){
+      return (this.seats - this.seatsSold)
+    }
+  }
+}
+seats.remainingSeats()

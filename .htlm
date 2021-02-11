@@ -1,0 +1,77 @@
+var user = { name: 'kristine'}
+console.log(user.name);
+______________________________________
+var user = { 
+  name: 'kristine',
+  age:12;
+  city:"scottsdale"
+}
+console.log(user.age);
+
+var user = { 
+  name: 'kristine',
+  age:12,
+  city:"scottsdale",
+  grades: {
+  math:90,
+    science:80,
+    languageArts:100,
+}
+}
+user.grades.coding = 99;
+console.log(user.grades);
+______________________________________
+
+typeof true
+"boolean"
+var ageone=12;
+undefined
+String(ageone);
+"12"
+ageone
+12
+ageone.toString();
+"12"
+var agetwo="33";
+undefined
+Number(agetwo);
+33
+var foo=2+ageone;
+undefined
+foo=2;
+2
+foo=ageone;
+12
+feo=+ageone;
+12
+var str='sdsdss fdfdfd';
+undefined
+str.length;
+13
+str.concat(' again and again ');
+"sdsdss fdfdfd again and again "
+str
+"sdsdss fdfdfd"
+______________________________________
+var user = { 
+  name: 'kristine',
+  age:12,
+  city:"scottsdale",
+  grades: {
+  math:90,
+    science:80,
+    languageArts:100,
+}
+}
+user.grades.coding = 99;
+console.log(user.grades);
+var a = 12;
+console.log(typeof(a));
+__________________________________
+var str2=str.concat(" again in again");
+str2.lastIndexOf("again");
+str.indexOf('sdsdss');
+str.replace('sdsdss', 'wolf');
+"wolf fdfdfd"
+sd.repeat(5);
+"SDFSDFSDFSDFSDF"
